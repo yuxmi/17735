@@ -1,0 +1,16 @@
+{
+  "version": "2.1.3",
+  "summary": {
+    "title": "LINDDUN Privacy Threat Analysis - KidsTube",
+    "owner": "Miu Nakajimaa",
+    "description": "Conduct privacy threat modelling of KidsTube using the LINDDUN approach, to be in compliance with the Children's Online Privacy Protection Act (COPPA).",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
