@@ -45,7 +45,7 @@
           {
             "position": {
               "x": 150,
-              "y": 240
+              "y": 230
             },
             "size": {
               "width": 112.5,
@@ -286,48 +286,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Parental Controls",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "54a743e0-5093-41da-b682-7b7886726dac",
-            "labels": [
-              "Parental Controls"
-            ],
-            "source": {
-              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
-            },
-            "target": {
-              "cell": "c3b32da3-9ea7-4815-bec4-3c466945c2be"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "User info, PII",
               "description": "",
               "outOfScope": false,
@@ -397,46 +355,6 @@
                 "y": 80
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "af0fc5b6-f472-429d-b01a-4b7fd7791f34",
-            "source": {
-              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
-            },
-            "target": {
-              "x": 520,
-              "y": 220
-            }
           },
           {
             "shape": "flow",
@@ -590,7 +508,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Request",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -607,7 +525,16 @@
             },
             "target": {
               "cell": "c5dc4092-ceb1-40c3-8081-c6fe795243ec"
-            }
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 200
+              }
+            ],
+            "labels": [
+              "Request"
+            ]
           },
           {
             "shape": "flow",
@@ -629,7 +556,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "Response",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -648,7 +575,13 @@
               "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
             },
             "labels": [
-              ""
+              "Response"
+            ],
+            "vertices": [
+              {
+                "x": 670,
+                "y": 160
+              }
             ]
           }
         ]
