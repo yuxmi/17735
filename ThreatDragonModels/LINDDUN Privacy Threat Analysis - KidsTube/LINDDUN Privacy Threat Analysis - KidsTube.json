@@ -286,48 +286,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User info, PII",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "42212859-bbf5-4ec8-9156-841bd8a1b972",
-            "labels": [
-              "User info, PII"
-            ],
-            "source": {
-              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
-            },
-            "target": {
-              "cell": "a5b5acc8-9c94-4aa8-ac29-b676ef9c1a93"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Streaming video",
               "description": "",
               "outOfScope": false,
@@ -353,96 +311,6 @@
               {
                 "x": 370,
                 "y": 80
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User Information",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "cc0b6b18-4239-40ef-af7d-99def79dd418",
-            "source": {
-              "cell": "28ab7884-04c9-4e04-9af5-6e544f3315c3"
-            },
-            "target": {
-              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
-            },
-            "labels": [
-              "User Information"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Parental controls",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "51c30af0-d824-4fde-8cae-c304c19963c7",
-            "labels": [
-              "Parental controls"
-            ],
-            "source": {
-              "cell": "9d5b23a5-b234-4534-b34c-387e8e08cd89"
-            },
-            "target": {
-              "cell": "c3b32da3-9ea7-4815-bec4-3c466945c2be"
-            },
-            "vertices": [
-              {
-                "x": 380,
-                "y": 264
               }
             ]
           },
@@ -583,12 +451,187 @@
                 "y": 160
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Parental controls",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "51c30af0-d824-4fde-8cae-c304c19963c7",
+            "labels": [
+              "Parental controls"
+            ],
+            "source": {
+              "cell": "9d5b23a5-b234-4534-b34c-387e8e08cd89"
+            },
+            "target": {
+              "cell": "c3b32da3-9ea7-4815-bec4-3c466945c2be"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 264
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Information",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ddb2c2a5-910f-4daf-9c34-2a1d15b32213",
+                  "title": "PII Data Collection without Parental Consent",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Identifiability",
+                  "description": "Collecting names, email addresses, or other PII of children during account signup without obtaining verified parental consent first is prohibited by COPPA.",
+                  "mitigation": "Make parental consent necessary for account creation, strict collection of PII of parents/guardians instead of child user",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "cc0b6b18-4239-40ef-af7d-99def79dd418",
+            "source": {
+              "cell": "28ab7884-04c9-4e04-9af5-6e544f3315c3"
+            },
+            "target": {
+              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
+            },
+            "labels": [
+              "User Information"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User info, PII",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "eca1184e-0fdd-4168-a59c-15a45e6e687a",
+                  "title": "Linking child accounts and activity across platforms",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Linkability",
+                  "description": "Sharing videos with friends, family, etc. could lead to linking the user's accounts across multiple platforms or devices, enabling profiling",
+                  "mitigation": "Account on KidsTube should not be linked directly to the child, and instead be necessary to go through a parent/guardian. Sharing through a third party should not be possible for children, and instead sharing should be encouraged via copying link.",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "eb316304-1a31-412f-be17-989e2b191740",
+                  "title": "Sharing viewing data and targeted recommendations",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Linkability",
+                  "description": "The recommendation algorithm linking viewing history to generate recommendations, and sharing viewing data with third-party analytics could reveal connections between videos watched and enable profiling.",
+                  "mitigation": "Target recommendations should not involve third parties, and instead only be conducted in-app. There should be a strict restriction on parent/guardian approval for registration, and data should not be linked to any specific child.",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "42212859-bbf5-4ec8-9156-841bd8a1b972",
+            "labels": [
+              "User info, PII"
+            ],
+            "source": {
+              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
+            },
+            "target": {
+              "cell": "a5b5acc8-9c94-4aa8-ac29-b676ef9c1a93"
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 5
   }
 }
