@@ -287,196 +287,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User info, PII",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "eca1184e-0fdd-4168-a59c-15a45e6e687a",
-                  "title": "Linking child accounts and activity across platforms",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Linkability",
-                  "description": "Sharing videos with friends, family, etc. could lead to linking the user's accounts across multiple platforms or devices, enabling profiling",
-                  "mitigation": "Account on KidsTube should not be linked directly to the child, and instead be necessary to go through a parent/guardian. Sharing through a third party should not be possible for children, and instead sharing should be encouraged via copying link.",
-                  "modelType": "LINDDUN",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                },
-                {
-                  "id": "eb316304-1a31-412f-be17-989e2b191740",
-                  "title": "Sharing viewing data and targeted recommendations",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Linkability",
-                  "description": "The recommendation algorithm linking viewing history to generate recommendations, and sharing viewing data with third-party analytics could reveal connections between videos watched and enable profiling.",
-                  "mitigation": "Target recommendations should not involve third parties, and instead only be conducted in-app. There should be a strict restriction on parent/guardian approval for registration, and data should not be linked to any specific child.",
-                  "modelType": "LINDDUN",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "42212859-bbf5-4ec8-9156-841bd8a1b972",
-            "labels": [
-              "User info, PII"
-            ],
-            "source": {
-              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
-            },
-            "target": {
-              "cell": "a5b5acc8-9c94-4aa8-ac29-b676ef9c1a93"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User Information",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "ddb2c2a5-910f-4daf-9c34-2a1d15b32213",
-                  "title": "PII Data Collection without Parental Consent",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Identifiability",
-                  "description": "Collecting names, email addresses, or other PII of children during account signup without obtaining verified parental consent first is prohibited by COPPA.",
-                  "mitigation": "Make parental consent necessary for account creation, strict collection of PII of parents/guardians instead of child user",
-                  "modelType": "LINDDUN",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "cc0b6b18-4239-40ef-af7d-99def79dd418",
-            "source": {
-              "cell": "28ab7884-04c9-4e04-9af5-6e544f3315c3"
-            },
-            "target": {
-              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
-            },
-            "labels": [
-              "User Information"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Request",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "ac8f1e48-a092-4239-b061-94518630dd01",
-                  "title": "Revealing private interests",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Disclosure of information",
-                  "description": "Recommendation algorithms can reveal private interests, and viewing data may be shared with unauthorised third parties. Other users could potentially see a child's video watch history, which is not aligned with COPPA.",
-                  "mitigation": "Prevent data from being leaked outside of the app, and furthermore link the child's activity primarily to the parent/guardian instead.",
-                  "modelType": "LINDDUN",
-                  "new": false,
-                  "number": 9,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "cbd84bfc-a5ad-4ce8-927e-f2812c7758ec",
-            "source": {
-              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
-            },
-            "target": {
-              "cell": "c5dc4092-ceb1-40c3-8081-c6fe795243ec"
-            },
-            "vertices": [
-              {
-                "x": 640,
-                "y": 200
-              }
-            ],
-            "labels": [
-              "Request"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Streaming video",
               "description": "",
               "outOfScope": false,
@@ -540,7 +350,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Response",
+              "name": "User info, PII",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -551,35 +361,105 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "33c62488-fdfb-4298-afd9-a3cbe4ba7903",
-                  "title": "Poisoning of approved videos",
+                  "id": "eca1184e-0fdd-4168-a59c-15a45e6e687a",
+                  "title": "Linking child accounts and activity across platforms",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Non-compliance",
-                  "description": "There could be a data manipulation that poisons the list of approved videos or bypasses security measures and algorithms, essentially showing age-inappropriate videos to susceptible children.",
-                  "mitigation": "Increase security measures to prevent tampering, check all uploaded videos and their validity before release.",
+                  "type": "Linkability",
+                  "description": "Sharing videos with friends, family, etc. could lead to linking the user's accounts across multiple platforms or devices, enabling profiling",
+                  "mitigation": "Account on KidsTube should not be linked directly to the child, and instead be necessary to go through a parent/guardian. Sharing through a third party should not be possible for children, and instead sharing should be encouraged via copying link.",
                   "modelType": "LINDDUN",
                   "new": false,
-                  "number": 11,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "eb316304-1a31-412f-be17-989e2b191740",
+                  "title": "Sharing viewing data and targeted recommendations",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Linkability",
+                  "description": "The recommendation algorithm linking viewing history to generate recommendations, and sharing viewing data with third-party analytics could reveal connections between videos watched and enable profiling.",
+                  "mitigation": "Target recommendations should not involve third parties, and instead only be conducted in-app. There should be a strict restriction on parent/guardian approval for registration, and data should not be linked to any specific child.",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 5,
                   "score": ""
                 }
               ]
             },
-            "id": "a3d89f9e-fa69-452d-9d37-f3000e337d3d",
+            "id": "42212859-bbf5-4ec8-9156-841bd8a1b972",
+            "labels": [
+              "User info, PII"
+            ],
             "source": {
-              "cell": "c5dc4092-ceb1-40c3-8081-c6fe795243ec"
-            },
-            "target": {
               "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
             },
-            "labels": [
-              "Response"
-            ],
+            "target": {
+              "cell": "a5b5acc8-9c94-4aa8-ac29-b676ef9c1a93"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ac8f1e48-a092-4239-b061-94518630dd01",
+                  "title": "Revealing private interests",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Disclosure of information",
+                  "description": "Recommendation algorithms can reveal private interests, and viewing data may be shared with unauthorised third parties. Other users could potentially see a child's video watch history, which is not aligned with COPPA.",
+                  "mitigation": "Prevent data from being leaked outside of the app, and furthermore link the child's activity primarily to the parent/guardian instead.",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "cbd84bfc-a5ad-4ce8-927e-f2812c7758ec",
+            "source": {
+              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
+            },
+            "target": {
+              "cell": "c5dc4092-ceb1-40c3-8081-c6fe795243ec"
+            },
             "vertices": [
               {
-                "x": 670,
-                "y": 160
+                "x": 640,
+                "y": 200
               }
+            ],
+            "labels": [
+              "Request"
             ]
           },
           {
@@ -617,7 +497,7 @@
                   "id": "6fee8b31-50f6-418f-9072-c7a2129019a3",
                   "title": "Allowing age-inappropriate video streaming",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "type": "Non-compliance",
                   "description": "Parents may fail to screen certain videos, therefore allowing their children to see age-inappropriate videos. There must be more fail-safe methods, with more cautious measures, so human error can be mitigated.",
                   "mitigation": "Machine learning algorithms to sort videos by age groups, allowing for additional automatic filtering based on child's age.",
@@ -660,6 +540,139 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "33c62488-fdfb-4298-afd9-a3cbe4ba7903",
+                  "title": "Poisoning of approved videos",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Non-compliance",
+                  "description": "There could be a data manipulation that poisons the list of approved videos or bypasses security measures and algorithms, essentially showing age-inappropriate videos to susceptible children.",
+                  "mitigation": "Increase security measures to prevent tampering, check all uploaded videos and their validity before release.",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "3092e21a-5480-48a8-9b78-73eed0ddf813",
+                  "title": "Lack of notice to guardians",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Detectability",
+                  "description": "Analytics trackers that monitor a child's in-app behaviour without notifying the parent violate COPPA's transparency requirements.",
+                  "mitigation": "Clearly communicate all guidelines, processes to parents/guardians before signing up. This also requires the parent to sign up instead of the child being able to do so on their own.",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "a3d89f9e-fa69-452d-9d37-f3000e337d3d",
+            "source": {
+              "cell": "c5dc4092-ceb1-40c3-8081-c6fe795243ec"
+            },
+            "target": {
+              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
+            },
+            "labels": [
+              "Response"
+            ],
+            "vertices": [
+              {
+                "x": 670,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Information",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ddb2c2a5-910f-4daf-9c34-2a1d15b32213",
+                  "title": "PII Data Collection without Parental Consent",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Identifiability",
+                  "description": "Collecting names, email addresses, or other PII of children during account signup without obtaining verified parental consent first is prohibited by COPPA.",
+                  "mitigation": "Make parental consent necessary for account creation, strict collection of PII of parents/guardians instead of child user",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "cc0b6b18-4239-40ef-af7d-99def79dd418",
+            "source": {
+              "cell": "28ab7884-04c9-4e04-9af5-6e544f3315c3"
+            },
+            "target": {
+              "cell": "5c271e02-88fb-4e76-8cb5-1312ee97e67f"
+            },
+            "labels": [
+              "User Information"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Parental controls",
               "description": "",
               "outOfScope": false,
@@ -674,13 +687,26 @@
                   "id": "d4dd237e-b65b-47df-a668-bc297b11d7d0",
                   "title": "Inability to delete records",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "type": "Non-repudiation",
                   "description": "Parents/guardians are unable to delete watch history, records, etc. of their children. For the safety of child information, watch history should be able to be manipulated, in the case the video was unsafe.",
                   "mitigation": "Add parental control features to manipulate information storage. Parents should have the ability to do basically everything a streaming service usually offers, and children are able to just look up / watch videos.",
                   "modelType": "LINDDUN",
                   "new": false,
                   "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "d8e495ce-96b3-4b54-9f3a-d5cd0799ba18",
+                  "title": "Unauthorised user access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Linkability",
+                  "description": "If an attacker was able to access parental controls without authorised access, the child would be able to watch anything on the platform, and it also gives access to child's information and various PII, which poses more dangers as children are far more deceivable. ",
+                  "mitigation": "Strengthen encryption, security, set password requirements, two-factor authentication, etc.",
+                  "modelType": "LINDDUN",
+                  "new": false,
+                  "number": 14,
                   "score": ""
                 }
               ]
@@ -707,6 +733,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 14
   }
 }
